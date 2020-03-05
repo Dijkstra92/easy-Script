@@ -9,7 +9,7 @@ then
 else
 	mkdir /tmp/$AppName
 	cd /tmp/$AppName
-	curl -o $FileNamemainoffice-4.5.6153-installer.pkg https://data.easy-info.com/index.php/s/MoARciLHz9BevXp/download
+	curl -o $FileNamemainoffice-4.5.6153-installer.pkg https://data.easy-info.com/index.php/s/Lt68x5jTA6llAEd/download
 	sudo installer -pkg $FileNamemainoffice-4.5.6153-installer.pkg -target /
 	rm -rf /tmp/$AppName
 fi
