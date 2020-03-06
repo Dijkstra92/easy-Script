@@ -2,8 +2,8 @@
 
 # Check if Teams service is running else it downloads and installs the agent
 
-AppName=zmirov-4.5.6153-installer
-FileName=zmirov
+AppName='zmirov-4.5.6153-installer'
+FileName='zmirov'
 Service='ninjarmm'
 
 if ps ax | grep -v grep | grep $Service > /dev/null
