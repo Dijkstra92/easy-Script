@@ -10,9 +10,5 @@ if ps ax | grep -v grep | grep $Service > /dev/null
 then
 	echo "$Service already installed, closing"
 else
-	mkdir /tmp/$AppName
-	cd /tmp/$AppName
-	curl -o Teams_osx.pkg https://data.easy-info.com/index.php/s/CtD4lpv6rClxDfL/download
-	sudo installer -pkg $FileName -target /
-	rm -rf /tmp/$AppName
+	curl https://raw.githubusercontent.com/Dijkstra92/easy-Script/master/Teams-install.sh | bash -s --
 fi
