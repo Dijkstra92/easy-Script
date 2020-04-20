@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Check if NinjaRMM service is running else it downloads and installs the agent
+# Check if Teams service is running else it downloads and installs the agent
 
 AppName=Teams
 FileName=Teams_osx.pkg
