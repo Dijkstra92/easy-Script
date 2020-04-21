@@ -12,7 +12,7 @@ then
 else
 	mkdir /tmp/$AppName
 	cd /tmp/$AppName
-	curl -o $Filename https://data.easy-info.com/index.php/s/CtD4lpv6rClxDfL/download
+	curl -O  https://data.easy-info.com/index.php/s/CtD4lpv6rClxDfL/download
 	sudo installer -pkg $Filename -target /
 	rm -rf /tmp/$AppName
 fi
