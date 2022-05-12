@@ -1,9 +1,0 @@
-    #!/bin/bash
-    
-    
-cd /tmp/
-printf "entrez le code de download:\n"
-read code
-curl -k -o Numbers.pkg https://nextcloud.dctx.tech:444/index.php/s/$code/download  
-
-  /tmp/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer --install
