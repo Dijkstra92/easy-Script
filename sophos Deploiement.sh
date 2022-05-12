@@ -2,7 +2,7 @@
     
     
 cd /tmp/
-printf "entrez le code de download:\n"
+printf "entrez le code de Download:\n"
 read code
 curl -k -o https://data.easy-info.com/index.php/s/$code/download
 unzip SophosInstall.zip
