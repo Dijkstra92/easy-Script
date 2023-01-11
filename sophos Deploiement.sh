@@ -1,10 +1,15 @@
-    #!/bin/bash
-    
-    
-cd /tmp/
+#!/bin/bash
+SOPHOS_DIR="/Users/Shared/Sophos_Install"
+mkdir $SOPHOS_DIR
+cd $SOPHOS_DIR
 printf "entrez le code de Download:\n"
 read code
-curl -o SophosInstall.zip https://nextcloud.dctx.tech:444/index.php/s/$code/download
+
+# Installing Sophos
+curl -L -O -k  "https://nextcloud.dctx.tech:444/index.php/s/$code/download/SophosInstall.zip"
 unzip SophosInstall.zip
-chmod +x /tmp/Sophos\ Installer.app/Contents/Ressources/SophosBootstrap-Options.plist 
-	 /tmp/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer --install
+chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer
+chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/tools/com.sophos.bootstrap.helper
+sudo $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer --quiet
+rm -rf $SOPHOS_DIR
+exit 0
