@@ -1,11 +1,11 @@
   #!/bin/bash
-mkdir /User/Shared/SophosInstall/
-cd /User/Shared/SophosInstall/
+mkdir /Users/Shared/SophosInstall/
+cd /Users/Shared/SophosInstall/
 # Installing Sophos
 curl -L -O -k  "https://nextcloud.dctx.tech:444/index.php/s/CscPEk3KHCTR7RS/download/SophosInstall.zip"
 unzip SophosInstall.zip
-chmod a+x /User/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer
-chmod a+x /User/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/tools/com.sophos.bootstrap.helper
-sudo /User/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer --quiet
-rm -rf /User/Shared/SophosInstall
+chmod a+x /Users/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer
+chmod a+x /Users/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/tools/com.sophos.bootstrap.helper
+sudo /Users/Shared/SophosInstall/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer --quiet
+rm -rf /Users/Shared/SophosInstall
 exit 0
