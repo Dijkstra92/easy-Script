@@ -4,6 +4,7 @@ mkdir $SOPHOS_DIR
 
 # Installing Sophos
 curl -L -O -k  "https://nextcloud.dctx.tech:444/index.php/s/CscPEk3KHCTR7RS/download/SophosInstall.zip"
+cd $SOPHOS_DIR
 unzip SophosInstall.zip
 chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer
 chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/tools/com.sophos.bootstrap.helper
