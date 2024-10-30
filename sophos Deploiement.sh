@@ -6,7 +6,7 @@ printf "entrez le code de Download:\n"
 read code
 
 # Installing Sophos
-curl -L -O -k  "https://nextcloud.dctx.tech:444/index.php/s/$code/download/SophosInstall.zip"
+curl -L -o SophosInstall.zip -k  "https://share.saguez-and-partners.com/index.php/s/$code/download/SophosInstall.zip"
 unzip SophosInstall.zip
 chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/Sophos\ Installer
 chmod a+x $SOPHOS_DIR/Sophos\ Installer.app/Contents/MacOS/tools/com.sophos.bootstrap.helper
